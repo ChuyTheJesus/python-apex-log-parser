@@ -17,7 +17,7 @@ def parse(logfile, outfile):
     writer = JsonWriter(outfile)
     writer.write_tree(parser)
 
-    print('SQOL Queries: ' + str(SOQLQuery.total))
+    print('SOQL Queries: ' + str(SOQLQuery.total))
 
 if __name__ == "__main__":
     if (len(sys.argv) != 3):

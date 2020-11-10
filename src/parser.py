@@ -1,4 +1,4 @@
-from tokens import CodeUnit, SOQLQuery, Token
+from .tokens import CodeUnit, SOQLQuery, Token
 
 # Takes a LogReader instance and uses it to parse the subscriber log into
 # tokens which can be consumed to do things like convert to json, etc.

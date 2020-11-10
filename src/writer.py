@@ -1,6 +1,6 @@
 import os
 
-from tokens import CodeUnit, SOQLQuery
+from .tokens import CodeUnit, SOQLQuery
 
 # Quick and dirty JSON writer for Subscriber Log tokens. 
 class JsonWriter:
