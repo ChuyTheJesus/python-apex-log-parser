@@ -42,7 +42,7 @@ bash log_scraper.sh help
 ## Authors
 
 * **Royce Nobles** - *Initial work* - (https://github.com/roycenobles)
-* **Jesus Perez** - *containerization* *minor updates* - (https://github.com/chuythejesus)
+* **Jesus Perez** - *containerization*, *minor updates* - (https://github.com/chuythejesus)
 
 
 ## License
