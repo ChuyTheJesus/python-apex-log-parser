@@ -1,4 +1,6 @@
 import sys
+import json
+import os
 
 from src.tokens import SOQLQuery
 from src.reader import LogReader
@@ -18,6 +20,28 @@ def parse(logfile, outfile):
     writer.write_tree(parser)
 
     print('SOQL Queries: ' + str(SOQLQuery.total))
+    # print_json(outfile)
+
+'''
+Helper function to check if file is empty
+'''
+def is_file_empty(inputFile):
+    return os.stat(inputFile).st_size == 0
+
+
+'''
+Function to print out json file contents
+'''
+def print_json(outputFile):
+    if is_file_empty(outputFile) != True:
+        print('File size is: ')
+        print(os.stat(outputFile).st_size)
+
+        with open(outputFile, 'r') as f:
+            parsedJson = json.loads(f)
+            print(json.dumps(parsedJson, indent=4))
+
+
 
 if __name__ == "__main__":
     if (len(sys.argv) != 3):

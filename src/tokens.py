@@ -5,6 +5,7 @@ class Token:
     def __init__(self, text):
         self.text = text
         self.segments = text.split('|')
+
         self.type = None if len(self.segments) < 2 else self.segments[1]
 
     def remove_line_endings(self, text):
